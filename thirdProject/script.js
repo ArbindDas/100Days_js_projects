@@ -28,6 +28,8 @@
 // })();
 
 
+// i prefer for this counter project we should use the named function because is perfectly fine and more beginner-friendly.
+
 
 function printCounter(){
   const buttons = document.querySelectorAll('.btn-counter');
