@@ -29,6 +29,7 @@
 
 
 // i prefer for this counter project we should use the named function because is perfectly fine and more beginner-friendly.
+// comparision with  the ifie function
 
 
 function printCounter(){
