@@ -76,5 +76,8 @@ colorItems.forEach(function (btn) {
 
     // Show all colors after 2 seconds
     setTimeout(showColors, 2000);
+
+
+    
   });
 });
