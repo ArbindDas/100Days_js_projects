@@ -10,12 +10,28 @@ const fifthColor = document.getElementById("brown");
 
 const colorElements = [firstColor, secondColor, thirdColor, fourthColor, fifthColor]; // Array of colors
 
+
+
+
 function resetColors() {
   colorElements.forEach((color) => {
+   
+    
     color.innerHTML = "";
     color.style.backgroundColor = "";
   });
 }
+
+function printColorsText(){
+  colorElements.forEach((clr)=>{
+      console.log(clr.innerText);
+      
+  })
+}
+printColorsText();
+
+
+
 
 
 function showColors() {
@@ -31,7 +47,7 @@ function showColors() {
   fourthColor.innerHTML = "I am the fourthColor";
   fourthColor.style.backgroundColor = "green";
 
-  fifthColor.innerHTML = "I am the fifthColor";
+  fifthColor.innerHTML = "I am the pachwa number";
   fifthColor.style.backgroundColor = "brown";
 }
 
@@ -76,6 +92,8 @@ colorItems.forEach(function (btn) {
 
     // Show all colors after 2 seconds
     setTimeout(showColors, 2000);
+
+
 
 
     

@@ -5,7 +5,7 @@ function printResult() {
   const resetbutton = document.querySelector(".reset-button");
 
   if (user === 0) {
-    result.textContent = "please enter the valid number : "+user;
+    result.textContent = "please enter the valid number : " + user;
     result.style.color = "red";
     return;
   }
@@ -23,25 +23,23 @@ function printResult() {
         result.textContent = "enterd number is : odd : " + user;
         result.style.color = "green";
         return;
-      }else{
-        if (user<0) {
-            result.textContent = `please enter the number greator then : `+user
-            result.style.color = "red";
-            return;
+      } else {
+        if (user < 0) {
+          result.textContent = `please enter the number greator then : ` + user;
+          result.style.color = "red";
+          return;
         }
       }
     }
   }
 
   if (resetbutton) {
-        resetbutton.addEventListener("click" , reset);
+    resetbutton.addEventListener("click", reset);
   }
 
   function reset() {
-      result.innerHTML = "";
-      error.innerHTML = "";
-      document.querySelector("user").value = "";
+    result.innerHTML = "";
+    error.innerHTML = "";
+    document.querySelector("user").value = "";
   }
-
- 
 }

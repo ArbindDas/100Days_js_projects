@@ -33,8 +33,10 @@ body {
 }
 
 .pannel.active {
-    flex: 5;  /* Make the active pannel grow */
+    /* Make the active pannel grow */
+    flex: 5;  
     background-color: yellow;  /* Add a background color to visualize changes */
+    transform: scale(1.1); /* Example effect */
 }
 
 .pannel .img {
@@ -45,6 +47,7 @@ body {
     cursor: pointer;
     transition: all 0.3s ease;
 }
+
 
 @media  screen and (max-width:480px)  {
     .container{
