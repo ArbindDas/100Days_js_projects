@@ -48,13 +48,15 @@
           circle,
           rgba(238, 174, 202, 1) 0%,
           rgba(148, 187, 233, 1) 100%
-          
         );
       }
 
       .inputfield {
-           padding: 10px;
-           text-align: center;
+        padding: 10px;
+        text-align: center;
+        width: 100%; /* Ensures the input field takes up the full width of its container */
+        max-width: 300px; /* Optionally set a maximum width */
+        font-size: 16px; /* Adjust font size to match the placeholder */
       }
 
       .btnBox {
@@ -84,13 +86,11 @@
       .inputForm {
         display: flex;
         flex-direction: column;
-
         gap: 10px;
         flex-wrap: wrap;
       }
 
       .answer {
-        margin-top: 10px;
         font-size: 15px;
         text-align: center;
       }
@@ -112,14 +112,14 @@
           />
         </div>
 
-        <span class="answer"> </span>
-
         <br />
         <br />
 
         <div class="btnBox">
           <input class="submit" type="submit" />
         </div>
+
+        <span class="answer"> </span>
 
         <br />
         <br />
@@ -140,7 +140,7 @@
         if (totalValue) {
           answer.innerText = `${totalValue} message delivered successfully`;
         } else {
-            alert `enter some message first `
+          alert`enter some message first `;
           answer.innerText = "";
         }
 
